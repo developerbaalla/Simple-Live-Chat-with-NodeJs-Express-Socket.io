@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  ul(id="messages")
+  form(id="form", method="post")
+    div.input
+      span.label User
+      input(type="text", name="user_", id="user_")
+    div.input
+      span.label Message
+      input(type="text", name="input", id="input")
+    div.actions
+      input(type="submit", value="Send")
+  script(src="/socket.io/socket.io.js")
+  script(src="/javascripts/my.js")
